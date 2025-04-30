@@ -193,6 +193,7 @@ body {
   height: 96px;
   cursor: pointer;
   border: none;
+  color: #222222;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.5em;
@@ -296,6 +297,7 @@ body {
   width: 100%;
   height: 4.06vw;
   min-height: 60px;
+  color: #222222;
   font-size: 1.04vw;
   font-weight: bold;
   letter-spacing: 0.04em;
@@ -307,98 +309,6 @@ body {
 
 .ord-btn:hover {
   opacity: 0.45;
-}
-
-@media (max-width: 1600px) {
-  .content-image {
-    height: 650px;
-  }
-
-  .text-block {
-    height: 650px;
-    font-size: 1.5vw;
-  }
-
-  .icon {
-    width: 3.6vw;
-    height: 2.9vw;
-  }
-}
-
-@media (max-width: 1400px) {
-  .content-image {
-    height: 550px;
-  }
-
-  .text-block {
-    height: 550px;
-    font-size: 1.7vw;
-  }
-
-  .text-line {
-    gap: 1vw;
-    padding: 1.2vw 0;
-  }
-}
-
-@media (max-width: 1200px) {
-  .section-content .container {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .content-image {
-    width: 80%;
-    height: auto;
-    max-height: 500px;
-    margin: 0 !important;
-  }
-
-  .content-image:last-child {
-    margin-top: 0 !important;
-  }
-
-  .text-block {
-    position: static;
-    transform: none;
-    width: 80%;
-    height: auto;
-    padding: 40px 0;
-    font-size: 2.2vw;
-  }
-
-  .icon {
-    width: 5vw;
-    height: 4vw;
-  }
-
-  .ord-btn {
-    margin-top: 40px;
-    font-size: 2vw;
-    height: 6vw;
-  }
-}
-
-@media (max-width: 768px) {
-  .content-image {
-    width: 100%;
-  }
-
-  .text-block {
-    width: 90%;
-    font-size: 18px;
-  }
-
-  .icon {
-    width: 40px;
-    height: 32px;
-  }
-
-  .ord-btn {
-    font-size: 16px;
-    height: 60px;
-  }
 }
 
 /* Секция 3 */
@@ -840,7 +750,10 @@ input#email {
     width: 80%;
     height: auto;
     padding: 40px 0;
-    font-size: 2.2vw;
+  }
+
+  .text-block p {
+    font-size: 20px;
   }
 
   .icon {
@@ -880,7 +793,7 @@ input#email {
     right: 0;
     left: 50%;
     transform: translateX(-50%);
-    height: 500px;
+    height: 430px;
   }
 
   .footer-main {
@@ -1042,8 +955,8 @@ input#email {
     font-size: 20px;
   }
 
-  .text-block {
-    font-size: 18px;
+  .text-block p {
+    font-size: 20px;
   }
 
   .ord-btn {
