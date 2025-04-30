@@ -25,9 +25,11 @@
   }
 }
 
-
 * {
   box-sizing: border-box;
+}
+html {
+  height: -webkit-fill-available;
 }
 
 html,
@@ -40,6 +42,8 @@ body {
   font-family: Arial;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 .container {
@@ -921,6 +925,11 @@ input#email {
 }
 
 @media (max-width: 768px) {
+  .first-section {
+    height: auto;
+    min-height: auto;
+  }
+
   .compact-header {
     flex-direction: column;
     height: auto;
@@ -953,6 +962,14 @@ input#email {
     width: 160px;
     height: 70px;
     font-size: 20px;
+  }
+
+  .overlay-image,
+  .right-image img {
+    position: static;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
   }
 
   .text-block p {
