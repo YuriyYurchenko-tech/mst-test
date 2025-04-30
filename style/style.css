@@ -9,14 +9,12 @@
 
 .fade-in {
   opacity: 0;
-  transform: translateY(40px);
   transition: opacity 0.8s ease, transform 0.8s ease;
-  will-change: opacity, transform;
 }
 
 .fade-in.visible {
   opacity: 1;
-  transform: translateY(0);
+
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -962,14 +960,6 @@ input#email {
     width: 160px;
     height: 70px;
     font-size: 20px;
-  }
-
-  .overlay-image,
-  .right-image img {
-    position: static;
-    height: auto;
-    width: 100%;
-    object-fit: contain;
   }
 
   .text-block p {
